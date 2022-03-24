@@ -8,7 +8,35 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Test to see if everything is linked</h1>
+
+    <form>
+        <label for="eMail">E-mail:</label>
+        <br>
+        <input type="text" id="eMail" name="eMail" onblur="validateEmail(name)">
+        <br>
+
+        <label for="country">Country:</label>
+        <br>
+        <input type="text" id="country" name="country">
+        <br>
+        <label for="zipCode">Zip Code:</label>
+        <br>
+        <input type="text" id="zipCode" name="zipCode">
+        <br>
+        <label for="password">Password:</label>
+        <br>
+        <input type="text" id="password" name="password">
+        <br>
+        <label for="passwordC">Password Confirmation:</label>
+        <br>
+        <input type="text" id="passwordC" name="passwordC">
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+
+
     <script src="./myscript.js"></script>
 </body>
 </html>

@@ -1,1 +1,3 @@
-console.log('link test')
+function validateEmail(email) {
+    alert(document.getElementById(email).value);
+  }
