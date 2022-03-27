@@ -9,34 +9,30 @@
 </head>
 <body>
 
-    <form>
+    <form id = 'validationform'>
         <label for="eMail">E-mail:</label>
         <br>
-        <input type="text" id="eMail" name="eMail" onblur="validateField(name)">
-        <p>Please Fill in field</p>
+        <input type="text" id="eMail" name="eMail" onblur="validateField(name)" required>
         <br>
         <label for="country">Country:</label>
         <br>
-        <input type="text" id="country" name="country">
-        <p>That is not correct</p>
+        <input type="text" id="country" name="country" onblur="validateField(name)" required>
         <br>
         <label for="zipCode">Zip Code:</label>
         <br>
-        <input type="text" id="zipCode" name="zipCode">
-        <p>That is not correct</p>
+        <input type="text" id="zipCode" name="zipCode" onblur="validateField(name)" required>
         <br>
         <label for="password">Password:</label>
         <br>
-        <input type="text" id="password" name="password">
-        <p>That is not correct</p>
+        <input type="text" id="password" name="password" onblur="validateField(name)" required>
         <br>
         <label for="passwordC">Password Confirmation:</label>
         <br>
-        <input type="text" id="passwordC" name="passwordC">
-        <p>That is not correct</p>
+        <input type="text" id="passwordC" name="passwordC" onblur="validateField(name)" required>
         <br>
         <br>
         <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
     </form>
 
 
